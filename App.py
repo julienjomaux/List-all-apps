@@ -19,7 +19,7 @@ When the payment is done, you will receive an password that will grant you acces
 
 Some apps are for free. 
 
-Thanks for reading [GEM Energy Analytics]({https://gemenergyanalytics.substack.com/}) and thanks for supporting the Apps. 
+Thanks for reading [GEM Energy Analytics]({https://gemenergyanalytics.substack.com/}) and thanks for supporting the GEM Energy Apps. 
 """
 )
 st.markdown("---")  # Separator line
@@ -57,6 +57,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
