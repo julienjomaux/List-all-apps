@@ -27,12 +27,12 @@ st.markdown("---")  # Separator line
 # You can add as many links as you want in this list
 apps = [
     {
-        "name": "Belgian Balancing Dashboard",
+        "name": "Belgian Balancing Dashboard (Free)",
         "url": "https://balancing-be.streamlit.app",
         "desc": "Visualize and explore Belgian grid balancing data, metrics, and insights."
     },
     {
-        "name": "Belgian Imbalance Prices - Real-Time",
+        "name": "Belgian Imbalance Prices - Real-Time (Free)",
         "url": "https://balancing-be-rt.streamlit.app/",
         "desc": "Show in Real-Time the imbalance Prices in Belgium."
     },
@@ -57,6 +57,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
