@@ -36,7 +36,11 @@ apps = [
         "url": "https://balancing-be-rt.streamlit.app/",
         "desc": "Show in Real-Time the imbalance Prices in Belgium."
     },
-
+    {
+        "name": "Belgian FRR caapcity auction Results (Free)",
+        "url": "https://frr-auctions-be.streamlit.app/",
+        "desc": "Show the results of the FRR capacity auctions in Belgium."
+    },
      {
          "name": "FCR capacity prices",
         "url": "https://fcr-heatmap.streamlit.app/",
@@ -57,6 +61,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
