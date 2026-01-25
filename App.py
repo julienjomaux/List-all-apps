@@ -22,12 +22,23 @@ apps = [
         "url": "https://balancing-be.streamlit.app",
         "desc": "Visualize and explore Belgian grid balancing data, metrics, and insights."
     },
+    {
+        "name": "Belgian Imbalance Prices - Real-Time",
+        "url": "https://balancing-be-rt.streamlit.app/",
+        "desc": "Show in Real-Time the imbalance Prices in Belgium."
+    },
 
      {
          "name": "FCR capacity prices",
         "url": "https://fcr-heatmap.streamlit.app/",
          "desc": "Display FCR capacity prices from 2021 to 2025"
+     },
+     {    
+         "name": "German aFRR capacity prices",
+        "url": "https://german-capacity-afrr-prices.streamlit.app/",
+         "desc": "Display aFRR German Capacity Prices from 2021 to 2025"
      }
+    
 ]
 
 for app in apps:
@@ -37,6 +48,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
