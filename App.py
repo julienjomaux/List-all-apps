@@ -12,7 +12,8 @@ Welcome! Here are quick links to all the apps of GEM Energy Analytics.
 **Connect with me:** [Julien Jomaux](https://www.linkedin.com/in/julien-jomaux/)  
 **Email me:** [julien.jomaux@gmail.com](mailto:julien.jomaux@gmail.com)
 
-More apps are being created at the moment. To support their creation, there is a fee of 30 €/month ==> [Sign Up Now]({stripe_link}). 
+More apps are being created at the moment. To support their creation, there is a fee of 30 €/month. 
+[Register here]({stripe_link}). When the payment is done, you will receive an password that will grant you access to all apps. Every month, you will receive an email with a new password to access the apps (except if you unsubscribe).
 """
 )
 st.markdown("---")  # Separator line
@@ -50,6 +51,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
