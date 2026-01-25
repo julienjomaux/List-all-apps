@@ -16,6 +16,10 @@ More apps are being created at the moment. To support their creation, there is a
 [Register here]({stripe_link}). 
 
 When the payment is done, you will receive an password that will grant you access to all apps. Every month, you will receive an email with a new password to access the apps (except if you unsubscribe).
+
+Some apps are for free. 
+
+Thanks for reading [GEM Energy Analytics]({https://gemenergyanalytics.substack.com/}) and thanks for supporting the Apps. 
 """
 )
 st.markdown("---")  # Separator line
@@ -53,6 +57,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
