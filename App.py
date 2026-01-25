@@ -13,7 +13,7 @@ Welcome! Here are quick links to all the apps of GEM Energy Analytics.
 **Email me:** [julien.jomaux@gmail.com](mailto:julien.jomaux@gmail.com)
 """
 )
-
+st.markdown("---")  # Separator line
 
 # You can add as many links as you want in this list
 apps = [
@@ -37,6 +37,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
