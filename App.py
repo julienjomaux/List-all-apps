@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="All Apps from GEM Energy Analytics", page_icon="🔗")
+st.set_page_config(page_title="All Apps from GEM Energy Analytics", page_icon="GEM.webp")
 
 st.title("All Apps from GEM Energy Analytics")
 st.markdown("---")  # Separator line
@@ -57,6 +57,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
