@@ -1,14 +1,12 @@
 import streamlit as st
 
-st.set_page_config(page_title="Streamlit App Launcher", page_icon="🔗")
+st.set_page_config(page_title="All Apps from GEM Energy Analytics", page_icon="🔗")
 
-st.title("Streamlit App Launcher")
-st.write("Welcome! Here are quick links to other Streamlit dashboards:")
+st.title("All Apps from GEM Energy Analytics")
+st.markdown("---")  # Separator line
 st.markdown(
     """
-Welcome! Here are quick links to all the apps of GEM Energy Analytics
-
-**Data source:** [Regelleistung.net](https://www.regelleistung.net/)
+Welcome! Here are quick links to all the apps of GEM Energy Analytics. 
 
 **More insights:** [GEM Energy Analytics](https://gemenergyanalytics.substack.com/)  
 **Connect with me:** [Julien Jomaux](https://www.linkedin.com/in/julien-jomaux/)  
@@ -39,6 +37,7 @@ for app in apps:
     )
     st.write(f"_{app['desc']}_")  # Description in italic
     st.markdown("---")  # Separator line
+
 
 
 
