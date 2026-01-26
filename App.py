@@ -83,3 +83,4 @@ app_category("📈 Analytics on Day-ahead prices", analytics_day_ahead, "#222") 
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
