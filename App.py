@@ -68,7 +68,7 @@ def app_category(title, apps, color, desc_color="#222"):
     )
     for app in apps:
         st.markdown(
-            f"<a href='{app['url']}' target='_blank' style='font-size:1.18em; font-weight:bold; color:black;'>{app['name']}</a>",
+            f"<a href='{app['url']}' target='_blank' style='font-size:1.18em; font-weight:bold; color:blue;'>{app['name']}</a>",
             unsafe_allow_html=True
         )
         st.markdown(
@@ -80,13 +80,14 @@ def app_category(title, apps, color, desc_color="#222"):
 
 
 # Display each category with a different color for clear visual separation
-app_category("🇧🇪 Belgian Balancing", belgian_balancing, "#F76A1A")  # Elia/Orange
-app_category("🇪🇺 European Balancing", european_balancing, "#378986") # Petrol blue
-app_category("📈 Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dark grey/black
+app_category("Belgian Balancing (Free)", belgian_balancing, "#F76A1A")  # Elia/Orange
+app_category("European Balancing", european_balancing, "#378986") # Petrol blue
+app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dark grey/black
 
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
