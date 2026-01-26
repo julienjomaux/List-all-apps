@@ -60,7 +60,7 @@ analytics_day_ahead = [
 ]
 
 ### Helper function for categories
-def app_category(title, apps, color):
+def app_category(title, apps, color, desc_color="#222"):
     st.markdown(
         f"<div style='background-color:{color}; padding: 1rem; border-radius:8px; margin-bottom:2rem;'>"
         f"<h3 style='color:white'>{title}</h3>",
@@ -68,10 +68,14 @@ def app_category(title, apps, color):
     )
     for app in apps:
         st.markdown(
-            f"<a href='{app['url']}' target='_blank' style='font-size:1.18em; font-weight:bold;'>{app['name']}</a>",
+            f"<a href='{app['url']}' target='_blank' style='font-size:1.18em; font-weight:bold; color:white;'>{app['name']}</a>",
             unsafe_allow_html=True
         )
-        st.markdown(f"<span style='color:white; font-style: italic;'>{app['desc']}</span><br><br>", unsafe_allow_html=True)
+        st.markdown(
+            f"<span style='color:{desc_color}; font-style: italic; background-color:rgba(255,255,255,0.7); padding:2px 5px; border-radius:4px;'>{app['desc']}</span>"
+            "<br><br>",
+            unsafe_allow_html=True
+        )
     st.markdown("</div>", unsafe_allow_html=True)
 
 
@@ -83,4 +87,5 @@ app_category("📈 Analytics on Day-ahead prices", analytics_day_ahead, "#222") 
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
