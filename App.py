@@ -12,7 +12,7 @@ Welcome! Here are quick links to all the apps of GEM Energy Analytics.
 **Connect with me:** [Julien Jomaux](https://www.linkedin.com/in/julien-jomaux/)  
 **Email me:** [julien.jomaux@gmail.com](mailto:julien.jomaux@gmail.com)
 
-More apps are being created at the moment. To support their creation, there is a fee of 30 €/month. [Register here]({stripe_link}). When the payment is done, you will receive a password that will grant you access to all apps. Every month, you will receive an email with a new password (except if you unsubscribe). Some apps are free.
+More apps are being created at the moment. [Register here]({stripe_link}). 
 
 Thanks for reading [GEM Energy Analytics](https://gemenergyanalytics.substack.com/) and for supporting the GEM Energy Apps.
 """
@@ -87,6 +87,7 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
