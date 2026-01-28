@@ -35,6 +35,11 @@ belgian_balancing = [
         "name": "Belgian FRR capacity auction Results (Free)",
         "url": "https://frr-auctions-be.streamlit.app/",
         "desc": "Show the results of the FRR capacity auctions in Belgium."
+    },
+    {
+        "name": "Imbalance Price 1 minute Belgium",
+        "url": "https://ip1-be.streamlit.app/",
+        "desc": "One-minute resolution view of Belgian imbalance price."
     }
 ]
 
@@ -50,7 +55,7 @@ european_balancing = [
         "desc": "Display aFRR German capacity prices from 2021 to 2025."
     },
     {
-        "name": "Picasso Visualizer (BE, NL, FR, DE)",
+        "name": "Picasso Visualizer (BE, NL, FR, DE) - Free",
         "url": "https://afrr-cbmp.streamlit.app/",
         "desc": "Visualize Picasso CBMP data for Belgium, Netherlands, France, and Germany."
     }
@@ -93,4 +98,5 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
