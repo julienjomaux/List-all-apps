@@ -37,7 +37,7 @@ belgian_balancing = [
         "desc": "Show the results of the FRR capacity auctions in Belgium."
     },
     {
-        "name": "Imbalance Price 1 minute Belgium",
+        "name": "Imbalance Price 1 minute Belgium (Free)",
         "url": "https://ip1-be.streamlit.app/",
         "desc": "One-minute resolution view of Belgian imbalance price."
     }
@@ -98,5 +98,6 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
