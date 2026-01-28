@@ -8,8 +8,8 @@ st.markdown(
     """
 Welcome! Here are quick links to all the apps of GEM Energy Analytics.
 
-**More insights:** [GEM Energy Analytics](https://gemenergyanalytics.substack.com/)  
-**Connect with me:** [Julien Jomaux](https://www.linkedin.com/in/julien-jomaux/)  
+**More insights:** GEM Energy Analytics  
+**Connect with me:** Julien Jomaux  
 **Email me:** julien.jomaux@gmail.com
 
 More apps are being created at the moment. Register here soon.
@@ -29,7 +29,8 @@ belgian_balancing = [
         "url": "https://balancing-be.streamlit.app",
         "desc": "Visualize and explore Belgian grid balancing data, metrics, and insights."
     },
-s - Real-Time (Free)",
+    {
+        "name": "Belgian Imbalance Prices - Real-Time (Free)",
         "url": "https://balancing-be-rt.streamlit.app/",
         "desc": "Show in Real-Time the imbalance prices in Belgium."
     },
@@ -56,7 +57,7 @@ picasso_apps = [
 european_balancing = [
     {
         "name": "FCR capacity prices",
-       ,
+        "url": "https://fcr-heatmap.streamlit.app/",
         "desc": "Display FCR capacity prices from 2021 to 2025."
     },
     {
@@ -79,36 +80,34 @@ analytics_day_ahead = [
 # ------------------------------------------------------------------------------
 
 def app_category(title, apps, color, desc_color="#222"):
+    # Header block for the category
     st.markdown(
         f"""
-        <div style="background-color:{color}; padding: 1rem; 
-                    border-radius:8px; margin-bottom:2rem;">
-            <h3 style="color:white">{title}</h3>
-        </div>
-        """,
-        unsafe_allow_html=True
+<div style="background-color:{color}; padding: 1rem; border-radius:8px; margin-bottom:0.5rem;">
+  <h3 style="color:white; margin:0;">{title}</h3>
+</div>
+""",
+        unsafe_allow_html=True,
     )
 
+    # List the apps with name link and description
     for app in apps:
         st.markdown(
             f"""
-            {app[
-               {app['name']}
-            </a>
-            """,
-            unsafe_allow_html=True
+{app[
+  {app['name']}
+</a>
+""",
+            unsafe_allow_html=True,
         )
-
         st.markdown(
             f"""
-            <span style="color:{desc_color}; font-style: italic;
-                         background-color:rgba(255,255,255,0.7);
-                         padding:2px 5px; border-radius:4px;">
-                {app['desc']}
-            </span>
-            <br><br>
-            """,
-            unsafe_allow_html=True
+<span style="color:{desc_color}; font-style: italic; background-color:rgba(255,255,255,0.7); padding:2px 5px; border-radius:4px;">
+  {app['desc']}
+</span>
+<br><br>
+""",
+            unsafe_allow_html=True,
         )
 
 # ------------------------------------------------------------------------------
