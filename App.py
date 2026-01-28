@@ -56,7 +56,9 @@ european_balancing = [
 
 analytics_day_ahead = [
     {
-        "name":"url": "https://capture-prices.streamlit.app/",
+        
+        "name": "Capture Prices Analytics (NEW!)",
+        "url": "https://capture-prices.streamlit.app/",
         "desc": "App for analytics on day-ahead prices and capture rates across European markets."
     }
 ]
@@ -98,3 +100,4 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222")
 
 st.markdown("---")
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
