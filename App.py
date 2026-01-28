@@ -8,11 +8,9 @@ st.markdown(
     """
 Welcome! Here are quick links to all the apps of GEM Energy Analytics.
 
-**More insights:** GEM Energy Analytics  
-**Connect with me:** [Julien Jomaux 
-**Email me:** julien.jomaux@gmail.com
-
-More apps are being created at the moment. Register here. 
+**More insights:** [GEM Energy Analytics](https://gemenergyanalytics.substack.com/)  
+**Connect with me:** Julien Jomaux  
+**Email me:** [julien.jomaux@gmail.com](mailto:julien.jomauxreated at the moment. Register here soon.
 
 Thanks for reading GEM Energy Analytics and for supporting the GEM Energy Apps.
 """
@@ -58,8 +56,7 @@ european_balancing = [
 
 analytics_day_ahead = [
     {
-        "name": "Capture Prices Analytics (NEW!)",
-        "url": "https://capture-prices.streamlit.app/",
+        "name":"url": "https://capture-prices.streamlit.app/",
         "desc": "App for analytics on day-ahead prices and capture rates across European markets."
     }
 ]
@@ -72,31 +69,32 @@ picasso_apps = [
     }
 ]
 
-### Helper function for categories
+# Helper function
 def app_category(title, apps, color, desc_color="#222"):
     st.markdown(
         f"<div style='background-color:{color}; padding: 1rem; border-radius:8px; margin-bottom:2rem;'>"
         f"<h3 style='color:white'>{title}</h3>",
         unsafe_allow_html=True
     )
+
     for app in apps:
         st.markdown(
-            f"<a href='{app['url']}' target='_blank' style='fonthtml=True
-        )
-        st.markdown(
-            f"<span style='color:{desc_color}; font-style: italic; background-color:rgba(255,255,255,0.7); padding:2px 5px; border-radius:4px;'>{app['desc']}</span>"
-            "<br><br>",
+            f"{app[{app['name']}</a>",
             unsafe_allow_html=True
         )
+        st.markdown(
+            f"<span style='color:{desc_color}; font-style: italic; background-color:rgba(255,255,255,0.7); "
+            f"padding:2px 5px; border-radius:4px;'>{app['desc']}</span><br><br>",
+            unsafe_allow_html=True
+        )
+
     st.markdown("</div>", unsafe_allow_html=True)
 
-
-# Display each category with a different color for clear visual separation
-app_category("Belgian Balancing (Free)", belgian_balancing, "#F76A1A")  # Elia/Orange
-app_category("Picasso", picasso_apps, "#6C63FF")  # Purple accent
-app_category("European Balancing", european_balancing, "#378986") # Petrol blue
-app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dark grey/black
+# Display categories
+app_category("Belgian Balancing (Free)", belgian_balancing, "#F76A1A")
+app_category("Picasso", picasso_apps, "#6C63FF")
+app_category("European Balancing", european_balancing, "#378986")
+app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222")
 
 st.markdown("---")
-
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
