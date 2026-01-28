@@ -48,7 +48,13 @@ european_balancing = [
         "name": "German aFRR capacity prices",
         "url": "https://german-capacity-afrr-prices.streamlit.app/",
         "desc": "Display aFRR German capacity prices from 2021 to 2025."
+    },
+    {
+        "name": "Picasso Visualizer (BE, NL, FR, DE)",
+        "url": "https://afrr-cbmp.streamlit.app/",
+        "desc": "Visualize Picasso CBMP data for Belgium, Netherlands, France, and Germany."
     }
+
 ]
 
 analytics_day_ahead = [
@@ -87,3 +93,4 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
