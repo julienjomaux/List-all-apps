@@ -95,13 +95,14 @@ def app_category(title, apps, color, desc_color="#222"):
 
 
 # Display each category with a different color for clear visual separation
-app_category("Belgian Balancing (Free)", belgian_balancing, "#F76A1A")  # Elia/Orange
 app_category("European Balancing", european_balancing, "#378986") # Petrol blue
+app_category("Belgian Balancing (Free)", belgian_balancing, "#F76A1A")  # Elia/Orange
 app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dark grey/black
 
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
