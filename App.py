@@ -29,7 +29,7 @@ european_balancing = [
     },
     {
         "name": "German aFRR capacity prices",
-        "url": "https://german-capacity-afrr-prices.streamlit.app/",
+        "url": "https://german-afrr.streamlit.app/",
         "desc": "Display aFRR German capacity prices from 2021 to 2025."
     },
         {
@@ -102,6 +102,7 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
