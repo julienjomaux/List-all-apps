@@ -12,9 +12,9 @@ Welcome! Here are quick links to all the apps of GEM Energy Analytics.
 **Connect with me:** [Julien Jomaux](https://www.linkedin.com/in/julien-jomaux/)  
 **Email me:** [julien.jomaux@gmail.com](mailto:julien.jomaux@gmail.com)
 
-More apps are being created at the moment. [Register here]({stripe_link}). 
+More apps are being created at the moment. If you want to support, please consider becoming a paying member of GEM Energy Analytics. 
 
-Thanks for reading [GEM Energy Analytics](https://gemenergyanalytics.substack.com/) and for supporting the GEM Energy Apps.
+Thanks for reading [GEM Energy Analytics](https://gemenergyanalytics.substack.com/).
 """
 )
 st.markdown("---")
@@ -54,8 +54,13 @@ european_balancing = [
         "url": "https://german-capacity-afrr-prices.streamlit.app/",
         "desc": "Display aFRR German capacity prices from 2021 to 2025."
     },
+        {
+        "name": "Picasso Visualizer - all countries",
+        "url": "https://afrr-cbmp-all.streamlit.app/",
+        "desc": "Visualize Picasso CBMP data For all European countries."
+    },
     {
-        "name": "Picasso Visualizer (BE, NL, FR, DE) - Free",
+        "name": "Picasso Visualizer (BE, NL, FR, DE)",
         "url": "https://afrr-cbmp.streamlit.app/",
         "desc": "Visualize Picasso CBMP data for Belgium, Netherlands, France, and Germany."
     }
@@ -98,6 +103,7 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
