@@ -24,7 +24,7 @@ st.markdown("---")
 european_balancing = [
     {
         "name": "FCR capacity prices",
-        "url": "https://fcr-heatmap.streamlit.app/",
+        "url": "https://fcr-capacity.streamlit.app/",
         "desc": "Display FCR capacity prices from 2021 to 2025."
     },
     {
@@ -102,6 +102,7 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
