@@ -46,29 +46,29 @@ european_balancing = [
 ]
 belgian_balancing = [
     {
-        "name": "Belgian Balancing Dashboard (Free)",
+        "name": "Belgian Balancing Dashboard",
         "url": "https://balancing-be.streamlit.app",
         "desc": "Visualize and explore Belgian grid balancing data, metrics, and insights."
     },
     {
-        "name": "Belgian Imbalance Prices - Real-Time (Free)",
+        "name": "Belgian Imbalance Prices - Real-Time",
         "url": "https://balancing-be-rt.streamlit.app/",
         "desc": "Show in Real-Time the imbalance prices in Belgium."
     },
     {
-        "name": "Belgian FRR capacity auction Results (Free)",
+        "name": "Belgian FRR capacity auction Results",
         "url": "https://frr-auctions-be.streamlit.app/",
         "desc": "Show the results of the FRR capacity auctions in Belgium."
     },
     {
-        "name": "Imbalance Price 1 minute Belgium (Free)",
+        "name": "Imbalance Price 1 minute Belgium",
         "url": "https://ip1-be.streamlit.app/",
         "desc": "One-minute resolution view of Belgian imbalance price."
     }
 ]
 analytics_day_ahead = [
     {
-        "name": "Capture Prices Analytics (NEW!)",
+        "name": "Capture Prices Analytics",
         "url": "https://capture-prices.streamlit.app/",
         "desc": "App for analytics on day-ahead prices and capture rates across European markets."
     }
@@ -96,12 +96,13 @@ def app_category(title, apps, color, desc_color="#222"):
 
 # Display each category with a different color for clear visual separation
 app_category("European Balancing", european_balancing, "#378986") # Petrol blue
-app_category("Belgian Balancing (Free)", belgian_balancing, "#F76A1A")  # Elia/Orange
+app_category("Belgian Balancing", belgian_balancing, "#F76A1A")  # Elia/Orange
 app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dark grey/black
 
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
