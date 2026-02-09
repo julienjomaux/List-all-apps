@@ -68,9 +68,9 @@ belgian_balancing = [
 ]
 analytics_day_ahead = [
     {
-        "name": "Capture Prices Analytics",
-        "url": "https://capture-prices.streamlit.app/",
-        "desc": "App for analytics on day-ahead prices and capture rates across European markets."
+        "name": "Capture Prices Analytics - Germany",
+        "url": "https://capture-price.streamlit.app/",
+        "desc": "App for analytics on capture prices in Germany."
     }
 ]
 
@@ -102,6 +102,7 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
