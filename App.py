@@ -20,28 +20,6 @@ Thanks for reading [GEM Energy Analytics](https://gemenergyanalytics.substack.co
 st.markdown("---")
 
 # Categorized Apps
-belgian_balancing = [
-    {
-        "name": "Belgian Balancing Dashboard (Free)",
-        "url": "https://balancing-be.streamlit.app",
-        "desc": "Visualize and explore Belgian grid balancing data, metrics, and insights."
-    },
-    {
-        "name": "Belgian Imbalance Prices - Real-Time (Free)",
-        "url": "https://balancing-be-rt.streamlit.app/",
-        "desc": "Show in Real-Time the imbalance prices in Belgium."
-    },
-    {
-        "name": "Belgian FRR capacity auction Results (Free)",
-        "url": "https://frr-auctions-be.streamlit.app/",
-        "desc": "Show the results of the FRR capacity auctions in Belgium."
-    },
-    {
-        "name": "Imbalance Price 1 minute Belgium (Free)",
-        "url": "https://ip1-be.streamlit.app/",
-        "desc": "One-minute resolution view of Belgian imbalance price."
-    }
-]
 
 european_balancing = [
     {
@@ -66,7 +44,28 @@ european_balancing = [
     }
 
 ]
-
+belgian_balancing = [
+    {
+        "name": "Belgian Balancing Dashboard (Free)",
+        "url": "https://balancing-be.streamlit.app",
+        "desc": "Visualize and explore Belgian grid balancing data, metrics, and insights."
+    },
+    {
+        "name": "Belgian Imbalance Prices - Real-Time (Free)",
+        "url": "https://balancing-be-rt.streamlit.app/",
+        "desc": "Show in Real-Time the imbalance prices in Belgium."
+    },
+    {
+        "name": "Belgian FRR capacity auction Results (Free)",
+        "url": "https://frr-auctions-be.streamlit.app/",
+        "desc": "Show the results of the FRR capacity auctions in Belgium."
+    },
+    {
+        "name": "Imbalance Price 1 minute Belgium (Free)",
+        "url": "https://ip1-be.streamlit.app/",
+        "desc": "One-minute resolution view of Belgian imbalance price."
+    }
+]
 analytics_day_ahead = [
     {
         "name": "Capture Prices Analytics (NEW!)",
@@ -103,6 +102,7 @@ app_category("Analytics on Day-ahead prices", analytics_day_ahead, "#222") # Dar
 st.markdown("---")
 
 st.info("More categories will be added soon! If you have suggestions, please get in touch.")
+
 
 
 
